@@ -1,0 +1,12 @@
+import ProtectedRoute from '../../routes/ProtectedRoute';
+import DashboardLayout from './DashboardLayout';
+
+const ProtectedLayout = ({ children }) => {
+  return (
+    <ProtectedRoute>
+      <DashboardLayout>{children}</DashboardLayout>
+    </ProtectedRoute>
+  );
+};
+
+export default ProtectedLayout;

@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.bg-app-gradient {
+  background:
+    radial-gradient(ellipse 900px 600px at 15% -10%, rgba(139, 92, 246, 0.25), transparent 60%),
+    radial-gradient(ellipse 800px 500px at 100% 0%, rgba(99, 102, 241, 0.2), transparent 55%),
+    radial-gradient(ellipse 700px 500px at 50% 100%, rgba(59, 130, 246, 0.12), transparent 55%),
+    #0a0b10;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.035);
+  /* blur ko 20px se kam karke 5px ya 8px kar dein taaki piche ka text clear dikhe */
+  backdrop-filter: blur(5px); 
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
